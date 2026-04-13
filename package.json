@@ -1,0 +1,51 @@
+{
+  "name": "ai-voice-agent",
+  "version": "1.0.0",
+  "description": "Production-ready AI receptionist that handles inbound phone calls for small businesses",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "setup": "tsx scripts/setup-vapi-assistant.ts",
+    "seed": "tsx scripts/seed-knowledge-base.ts",
+    "seed:agno": "tsx scripts/seed-agno-docs.ts",
+    "query:agno": "tsx scripts/query-agno-docs.ts",
+    "test-call": "tsx scripts/test-call.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "ai",
+    "voice-agent",
+    "receptionist",
+    "vapi",
+    "twilio",
+    "deepgram",
+    "elevenlabs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@hubspot/api-client": "^12.0.1",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "@vapi-ai/server-sdk": "^0.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "googleapis": "^144.0.0",
+    "openai": "^4.73.0",
+    "resend": "^4.8.0",
+    "twilio": "^5.4.0",
+    "winston": "^3.17.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "@vitest/coverage-v8": "^4.1.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.4"
+  }
+}

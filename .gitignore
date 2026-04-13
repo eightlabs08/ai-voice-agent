@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+coverage/
+
+# Local knowledge sources (never push to GitHub)
+.local/
+
+ai-voice-agent-493212-cded0b33f509.json
+
+scripts/query-agno-docs.ts
+
+scripts/seed-agno-docs.ts
