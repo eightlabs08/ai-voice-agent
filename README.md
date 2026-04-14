@@ -2,7 +2,7 @@
 
 A production-ready AI receptionist that handles inbound phone calls for small businesses. Built with Vapi, Deepgram, Claude/GPT-4o, ElevenLabs, and a full tool stack (Google Calendar, Pinecone RAG, HubSpot CRM, Twilio SMS, Resend email).
 
-**Watch the full architecture walkthrough: [YouTube Video]**
+**Watch the full architecture walkthrough: [YouTube Video](https://youtu.be/ucrizrl2dxA)**
 
 ---
 
